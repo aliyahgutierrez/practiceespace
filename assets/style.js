@@ -1,18 +1,42 @@
 let countEl = document.getElementById("count-el")
+let saveEl = document.getElementById("save-el")
 console.log(countEl)
 
 let count = 0
 
 function increment() {
     count += 1
-    countEl.innerText = count
+    countEl.textContent = count
     console.log(count)
 
 }
 
 function save(){
+    let countStr = count + "  -  "
+    saveEl.textContent += countStr
     console.log(count)
+    countEl.textContent = 0 
+    count = 0 
 }
+
+
+
+
+// let myGreeting = greeting + username 
+
+// console.log(myGreeting)
+
+// let welcomeEL = document.getElementById("welcome-el")
+// console.log(welcomeEL)
+
+// let names = "Aliyah Gutierrez"
+
+// let greeting = " Welcome Back!"
+
+// welcomeEL.innerText = names + greeting
+
+
+// welcomeEL.innerText += "👋"
 
 // let username = "per"
 
